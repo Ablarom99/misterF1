@@ -19,8 +19,11 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'nickname',
         'email',
         'password',
+        'escuderia_id',
+        'rol'
     ];
 
     /**
@@ -41,4 +44,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    // Relación de uno a uno
+    public function escuderia(){
+        return $this->hasOne('App\Models\Escuderia');
+    }
+
+    public function noticia(){
+        return $this->hasOne('App\Models\Noticia');
+    }
 }

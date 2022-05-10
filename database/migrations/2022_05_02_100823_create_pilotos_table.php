@@ -13,15 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('pilotos', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('nickname')->unique();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->set('rol', ['user', 'admin', 'editor'])->default('user');
-            $table->rememberToken();
+            $table->string('nombre')->unique();
+            $table->string('numero')->unique();
+            $table->string('api_id')->unique();
+            $table->string('nacionalidad');
+
+
+
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('pilotos');
     }
 };
