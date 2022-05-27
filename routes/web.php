@@ -21,3 +21,6 @@ Auth::routes();
 
 //  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('calendario', function () {
+    return view('pages/calendario');
+})->name('calendario');

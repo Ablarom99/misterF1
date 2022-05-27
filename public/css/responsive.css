@@ -22,10 +22,17 @@
 	.section-map-feature .btn {
 		margin: 60px 0 165px;
 	}
+    .form-login{
+        width: 50vw !important;
+            }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+    .form-login{
+        width: 100vw !important;
+
+            }
 	/* CUSTOM RESETS */
 	h1 {
 		font-size: 42px;
@@ -72,7 +79,7 @@
 	/* site-section */
 	.site-section {
 	   padding: 60px 0 100px;
-	} 
+	}
 
 	.heading-separator {
 		padding-bottom: 50px
@@ -141,14 +148,14 @@
 	}
 
 	/* PAGES */
-	/* 
+	/*
 	 * Portfolio-item
 	 */
 	.project-info h5 {
 		margin-top: 25px;
 	}
 
-	/* 
+	/*
 	 * Blog
 	 */
 	/* Sidebar */
@@ -161,6 +168,10 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 	/* CUSTOM RESETS */
+    .form-login{
+        width: 100vw !important;
+        height: 75vh;
+            }
 	h1 {
 		font-size: 32px;
 	}
@@ -178,7 +189,7 @@
 		min-width: 140px;
 		font-size: 14px;
 	}
-	
+
 	/* Elements */
 	/* Tabs */
 	.nav-tabs > li {
@@ -215,7 +226,7 @@
 	.site-header {
 		padding-top: 20px;
 	}
-	
+
 	.navbar-header .site-title {
 		padding-left: 15px;
 	}
@@ -272,8 +283,8 @@
 		background-color: #26272d;
 	}
 
-	.act .slicknav_icon-bar:first-child, 
-	.act .slicknav_icon-bar:last-child  { 
+	.act .slicknav_icon-bar:first-child,
+	.act .slicknav_icon-bar:last-child  {
 		position: absolute;
 		top: 10px;
 		height: 3px;
@@ -405,7 +416,7 @@
 	/* site-section */
 	.site-section {
 	   padding: 30px 0 60px;
-	} 
+	}
 
 	.subheading-text {
 	    font-size: 16px;
@@ -505,14 +516,14 @@
 	.copyright {
 		padding: 15px 0;
 	}
-	
+
 	/* PAGES */
 	/* Portfolio */
 	#grid {
 		margin-top: 25px;
 	}
 
-	/* 
+	/*
 	 * Project item
 	 */
 	.project-img {
@@ -538,7 +549,7 @@
 		margin-top: 5px;
 	}
 
-	/* 
+	/*
 	 * Blog
 	 */
 	.blog-post + .blog-post,
@@ -607,7 +618,7 @@
 		padding-top: 5px
 	}
 
-	/* 
+	/*
 	 * Contact
 	 */
 	/* Section: Contact-us */
@@ -624,14 +635,16 @@
 		margin-top: 25px;
 	}
 
-	.contact-info .list-unstyled + h3, 
+	.contact-info .list-unstyled + h3,
 	.contact-info a + h3 {
 		margin: 15px 0 10px;
 	}
+
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
+
 	/* SITEMAIN */
 
 	.section-services .col-xs-6 {
@@ -709,7 +722,7 @@
 	}
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
 }

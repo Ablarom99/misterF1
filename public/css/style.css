@@ -117,8 +117,8 @@ p + p {
 button.btn:hover,
 .btn:focus,
 button.btn:focus {
-    background-color: #26272d;
-    color: #26272d;
+    background-color: #15151E;
+    color: #fff;
 }
 
 .btn-gray:hover,
@@ -141,7 +141,7 @@ button.btn:focus {
     border-radius: 25px;
     height: 50px;
     padding: 15px 20px;
-    border-color: #f5f5f8;
+    border-color: #ACACAC;
 }
 
 .form-control + .form-control {
@@ -912,7 +912,7 @@ html, body {
     height: 2px;
     width: 50px;
     margin: 0 auto;
-    background-color: #267df4;
+    background-color: #E10600;
 }
 
 /* Section: Features */
@@ -1600,4 +1600,100 @@ a.linkedin-bg:hover {
 @font-face {
     font-family: protos;
     src: url("../recursos/fuentes/protos.otf");
+}
+
+
+
+
+/* INDEX  */
+.logoindex{
+    height: 200px !important;
+    width: 200px ;
+    box-shadow: -4px 10px 7px black;
+    border-radius: 50%;
+    top: 6430%;
+}
+.padding-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.no-margin > p{
+    margin: 0 !important;
+    color: #000;
+}
+.section-title > h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 0 !important;
+}
+.icono{
+font-size: 80px;
+color: #9fa3a7;
+
+}
+.icono2{
+    width: 80px;
+    fill:#9fa3a7 ;
+}
+.btn-red{
+    color: #fff;
+background-color: #E10600 ;
+}
+.fondo-login{
+    background-image:
+    linear-gradient(
+      #e10700b4,
+      #e10700b4
+    ),
+    url('../recursos/images/login/ferrari.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.fondo-register{
+    background-image:
+    linear-gradient(
+      #e10700b4,
+      #e10700b4
+    ),
+    url('../recursos/images/login/ferrariregister.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+.form-login{
+    border-radius: 2%;
+    background: #fff;
+    height: 100vh;
+    width: 50vw;
+    text-align: center;
+}
+.no-margin{
+    margin: 0;
+}
+.padding-top-bottom{
+    padding-top: 10%;
+    padding-bottom: 1%;
+
+}
+.padding-left-right{
+padding-left: 10%;
+padding-right: 10%;
+}
+.padding-right{
+    padding-right: 10%;
+}
+
+.form-link a:hover{
+   color: black ;
+}
+.form-link a{
+    color: #E10600 ;
+ }
+.waves{
+    display: flex;
+    flex-direction: column;
 }
