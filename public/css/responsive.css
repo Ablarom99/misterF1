@@ -2,6 +2,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
+
+
 	/* CUSTOM RESETS */
 	h1 {
 		font-size: 52px;
@@ -29,6 +31,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+    .mister-form{
+        top: 0px !important;
+    }
     .form-login{
         width: 100vw !important;
 
@@ -168,6 +173,21 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 	/* CUSTOM RESETS */
+
+    .padding-top-bottom-10{
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+    }
+    .img-piloto{
+       float: none !important;
+       width: 100% !important;
+       height: auto !important;
+    }
+    .img-escuderia{
+        float: none !important;
+        left: 0% !important;
+        text-align: center;
+    }
     .form-login{
         width: 100vw !important;
         height: 75vh;
