@@ -25,7 +25,7 @@ Auth::routes();
 
 Route::get('crearescuderia', function () {
     return view('pages/crearescuderia');
-})->name('crearescuderia');
+})->name('crearescuderia')->middleware('auth');
 // RUTAS SIN PROTECCIÓN
 
 Route::get('calendario', function () {

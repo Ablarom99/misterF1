@@ -7,8 +7,16 @@
             <div class="hero-text">
                 <h1><span style="font-family: ethnocentric;">Mister</span><span
                         style="font-family: protos; color:#e10600;">F1</span></h1>
+                @guest
+
                 <p>Regístrate y crea tu propia escudería</p>
                 <a href="#" class="btn btn-border">¡Regístrate!</a>
+
+                @else
+                <p>Entra en tú perfil para ver tus progresos.</p>
+                <a href="#" class="btn btn-border"><span style="font-family: ethnocentric;">Mister</span><span
+                    style="font-family: protos; color:#e10600;">F1</span></a>
+                @endguest
             </div><!-- /.hero-text -->
         </div><!-- /.hero-content -->
     </div><!-- /.hero -->

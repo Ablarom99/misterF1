@@ -1,8 +1,17 @@
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1199px) {
+@media only screen and (max-width : 1919px) {
+    .contenedor-formulario{
+        width: 40vw !important;
+       }
+    }
 
+
+@media only screen and (max-width : 1199px) {
+    .contenedor-formulario{
+        width: 60vw !important;
+       }
 
 	/* CUSTOM RESETS */
 	h1 {
@@ -31,6 +40,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+
+    .contenedor-formulario{
+        width: 85vw !important;
+       }
+
     .mister-form{
         top: 0px !important;
     }
@@ -171,9 +185,11 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 766px) {
+    .contenedor-formulario{
+        width: 85vw !important;
+       }
 	/* CUSTOM RESETS */
-
     .padding-top-bottom-10{
         padding-top: 2% !important;
         padding-bottom: 2% !important;
@@ -665,6 +681,9 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px) {
 
+    .contenedor-formulario{
+        width: 85vw !important;
+       }
 	/* SITEMAIN */
 
 	.section-services .col-xs-6 {
