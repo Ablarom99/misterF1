@@ -50,5 +50,8 @@ class User extends Authenticatable
     public function escuderia(){
         return $this->hasOne('App\Models\Escuderia');
     }
+    public function noticias(){
+        return $this->hasMany('App\Models\Noticia');
+    }
 
 }

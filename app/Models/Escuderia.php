@@ -23,6 +23,11 @@ class Escuderia extends Model
     public function pilotos(){
         return $this->belongsToMany('App\Models\Piloto');
     }
+    // relacion de uno a uno
+    public function users(){
+        // $user = User::find($this->user_id);
+        return $this->belongsTo('App\Models\User', 'user_id');
+    }
 
         // de uno a muchos
     public function constructors(){

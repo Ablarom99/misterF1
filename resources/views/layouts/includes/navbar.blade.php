@@ -20,8 +20,14 @@
                     </li>
                     @guest
                     @else
-                    <li><a href="portfolio.html">Clasificación</a></li>
-                    <li><a href="contact.html">Noticias</a></li>
+                    <li><a href="{{route('clasificacion')}}">Clasificación</a></li>
+                    <li><a href="{{route('noticias')}}">Noticias</a></li>
+                    @if (\Auth::user()->rol == 'admin' || \Auth::user()->rol == 'editor' )
+                    <li><a href="{{route('subirnoticia')}}">Subir Noticia</a></li>
+                    @endif
+                    @if (\Auth::user()->rol == 'admin')
+                    <li><a href="{{route('paneluser')}}">Panel de Usuarios</a></li>
+                    @endif
                     @endguest
                     <li>@guest
                             @if (Route::has('login'))

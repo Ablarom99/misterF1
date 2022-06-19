@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="text-right padding-top-bottom padding-right">
-                        <input type="submit" class="btn btn-red"></input>
+                        <button type="submit" class="btn btn-red">Iniciar Sesión</button>
                     </div>
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -44,7 +44,7 @@
 
                 </form>
                 <div class="form-link col-sm-12 padding-top-bottom padding-left-right">
-                    <h5>¿Has olvidado tu <a href="#">contraseña</a>?</h5>
+                    <h5>¿Has olvidado tu <a href="{{route('password.request')}}">contraseña</a>?</h5>
                     <h5>¿Aún no tienes cuenta?<a href="{{ route('register') }}">Regístrate</a></h5>
                 </div>
             </div>

@@ -13,7 +13,7 @@
                 <div class="contenedor-pilotos ">
                     <a href="{{('piloto/perez')}}"><img title="perez" alt="perez" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/perez.jpg')}}"></a>
                     <a href="{{('piloto/ricciardo')}}"><img title="ricciardo" alt="ricciardo" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/ricciardo.jpg')}}"></a>
-                    <a href="{{('piloto/russel')}}"><img title="russel" alt="russel" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/russel.jpg')}}"></a>
+                    <a href="{{('piloto/russell')}}"><img title="russel" alt="russel" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/russell.jpg')}}"></a>
                     <a href="{{('piloto/sainz')}}"><img title="sainz" alt="sainz" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/sainz.jpg')}}"></a>
                     <a href="{{('piloto/mick_schumacher')}}"><img title="mick_schumacher" alt="mick_schumacher" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/mick_schumacher.jpg')}}"></a>
                     <a href="{{('piloto/stroll')}}"><img title="stroll" alt="stroll" class="img-pilotos text-center" src="{{asset('recursos/images/pilotos/stroll.jpg')}}"></a>

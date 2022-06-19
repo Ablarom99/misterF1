@@ -4,6 +4,12 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\EscuderiaController;
 use \App\Http\Controllers\CircuitoController;
 use \App\Http\Controllers\PilotoController;
+use \App\Http\Controllers\ClasificacionController;
+use \App\Http\Controllers\NoticiaController;
+use \App\Http\Controllers\AdministradorController;
+use \App\Http\Controllers\MailController;
+
+
 
 
 
@@ -24,22 +30,41 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 // RUTAS PROTEGIDAS
 
-// Route::get('crearescuderia', function () {
-//     return view('pages/crearescuderia');
-// })->name('crearescuderia')->middleware('auth');
-
+//  MI ESCUDERÍA
 Route::resource('crearescuderia', EscuderiaController::class)->middleware(['auth', 'verified']);
-// Route::get('/crearescuderia', [EscuderiaController::class, 'index'])->name('crearescuderia')->middleware(['auth', 'verified']);
 
 Route::get('/miescuderia', [EscuderiaController::class, 'loadmiescuderia'])->name('miescuderia')->middleware(['auth', 'verified']);
 
-// Route::resource('miescuderia', EscuderiaController::class)->name('*', 'miescuderia')->middleware(['auth', 'verified']);
+
+//  MISTERF1 CLASIFICACIÓN
+Route::get('/clasificacion', [ClasificacionController::class, 'index'])->name('clasificacion')->middleware(['auth', 'verified']);
+
+        // Subir Noticias
+    // FORMULARIO
+Route::get('subirnoticia', function () {
+    return view('pages/noticias/crearnoticia');
+})->name('subirnoticia')->middleware(['editor', 'verified']);
+
+    // CONTROLADOR
+Route::resource('crearnoticia', NoticiaController::class)->middleware(['auth', 'editor', 'verified']);
+    // Cargar noticias
+Route::get('/noticias', [NoticiaController::class, 'index'])->name('noticias')->middleware(['auth', 'verified']);
+
+
+// Gestion de Usuarios
+Route::get('/paneluser', [AdministradorController::class, 'index'])->name('paneluser')->middleware(['auth', 'admin', 'verified']);
+Route::match(['get', 'post'], 'useredit/{usuario}', [AdministradorController::class, 'edit'])->name('useredit')->middleware(['auth', 'admin', 'verified']);
+Route::match(['get', 'put'], 'userupdate/{usuario}', [AdministradorController::class, 'update'])->name('userupdate')->middleware(['auth', 'admin', 'verified']);
+Route::match(['get', 'put'], 'userdelete/{usuario}', [AdministradorController::class, 'delete'])->name('userdelete')->middleware(['auth', 'admin', 'verified']);
+
+
+
 
 // RUTAS SIN PROTECCIÓN
+
+Route::get('/send-email', [MailController::class, 'sendEmail']);
 
 Route::get('calendario', function () {
     return view('pages/calendario');
