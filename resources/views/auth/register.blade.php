@@ -59,7 +59,7 @@
                             @enderror
 
                     <div class="text-right padding-top-bottom padding-right">
-                        <button type="submit" class="btn btn-green"> Crear</button>
+                        <button type="submit" class="btn btn-red"> Crear</button>
                     </div>
                 </form>
                 <div class="form-link col-sm-12  padding-left-right">

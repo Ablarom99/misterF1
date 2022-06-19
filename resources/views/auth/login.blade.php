@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="text-right padding-top-bottom padding-right">
-                        <input type="submit" class="btn btn-green"></input>
+                        <input type="submit" class="btn btn-red"></input>
                     </div>
                     @error('email')
                         <span class="invalid-feedback" role="alert">

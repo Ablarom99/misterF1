@@ -18,10 +18,6 @@ return new class extends Migration
             $table->string('nombre');
             $table->string('api_id');
             $table->string('nacionalidad');
-            $table->unsignedBigInteger('escuderia_id');
-            $table->foreign('escuderia_id')->references('id')->on('escuderias')->onDelete('cascade')->onUpdate('cascade');
-
-
             $table->timestamps();
         });
     }

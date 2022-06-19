@@ -19,7 +19,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne1" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne1" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Baréin - 20 Marzo</li>
@@ -41,7 +41,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne2" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne2" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Australia - 10 Abril</li>
@@ -63,7 +63,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne3" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne3" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Miami - 8 Mayo</li>
@@ -86,7 +86,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne4" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne4" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Azerbaiyán - 12 Junio</li>
@@ -108,7 +108,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne5" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne5" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Gran Bretaña - 3 Julio</li>
@@ -132,7 +132,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne6" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne6" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Bégica - 28 Agosto</li>
@@ -153,7 +153,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne7" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne7" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Países Bajos - 4 Septiembre</li>
@@ -175,7 +175,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne8" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne8" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Singapur - 2 Octubre</li>
@@ -199,7 +199,7 @@
                                     </a>
                                 </h4><!-- /.panel-title -->
                             </div><!-- /.panel-heading -->
-                            <div aria-expanded="false" id="collapseOne" class="panel-collapse collapse">
+                            <div aria-expanded="false" id="collapseOne" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
                                         <li>Brasi - 13 Noviembre</li>

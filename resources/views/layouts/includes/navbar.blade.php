@@ -2,46 +2,50 @@
     <nav id="primary-navigation" class="site-navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="site-title"><span style="font-family: ethnocentric;">Mister</span><span
+                <a href="{{ route('home') }}" class="site-title"><span
+                        style="font-family: ethnocentric;">Mister</span><span
                         style="font-family: protos; color:#e10600;">F1</span></a>
             </div><!-- /.navbar-header -->
             <div class="collapse navbar-collapse" id="agency-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{ route('home') }}">Home</a></li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<i
+                    <li class="active"><a href="{{ route('home') }}">Inicio</a></li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas<i
                                 class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="{{ route('calendario') }}">Calendario</a></li>
+                            <li><a href="{{route('pilotos')}}">Pilotos</a></li>
+                            <li><a href="{{route('circuitos')}}">Circuitos</a></li>
+                            <li><a href="{{route('escuderias')}}">Escuderías</a></li>
                         </ul>
                     </li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="ui-elements.html">UI Elements</a></li>
+                    @guest
+                    @else
+                    <li><a href="portfolio.html">Clasificación</a></li>
+                    <li><a href="contact.html">Noticias</a></li>
+                    @endguest
                     <li>@guest
                             @if (Route::has('login'))
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
                         </li>
                         @endif
                         @if (Route::has('register'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                             </li>
                         @endif
                     @else
                         <li class="dropdown"><a href="#" class="dropdown-toggle"
-                                data-toggle="dropdown">{{ Auth::user()->name }}<i class="fa fa-caret-down hidden-xs"
+                                data-toggle="dropdown">{{ Auth::user()->nickname }}<i class="fa fa-caret-down hidden-xs"
                                     aria-hidden="true"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                <li><a href="{{ route('crearescuderia') }}">{{ __('Crear Escudería') }}</a></li>
-                                <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                <li><a href="{{ route('crearescuderia.index') }}">{{ __('Mi Escudería') }}</a></li>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar Sesión') }}
                                     </a></li>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                    class="d-none">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
                             </ul>

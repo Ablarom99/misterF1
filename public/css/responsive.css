@@ -9,6 +9,10 @@
 
 
 @media only screen and (max-width : 1199px) {
+    .miescuderia-puntos{
+        float: none !important;
+        text-align: center !important;
+    }
     .contenedor-formulario{
         width: 60vw !important;
        }
@@ -40,6 +44,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
+
 
     .contenedor-formulario{
         width: 85vw !important;
@@ -186,6 +191,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 766px) {
+
     .contenedor-formulario{
         width: 85vw !important;
        }

@@ -10,6 +10,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     @include('layouts.includes.head')
+    @yield('head')
 </head>
 
 <body>
@@ -30,6 +31,7 @@
 
     {{-- SCRIPT --}}
     @include('layouts.includes.scripts')
+    @yield('scripts')
 </body>
 
 

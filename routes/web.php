@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\EscuderiaController;
+use \App\Http\Controllers\CircuitoController;
+use \App\Http\Controllers\PilotoController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,34 +28,51 @@ Auth::routes();
 
 // RUTAS PROTEGIDAS
 
-Route::get('crearescuderia', function () {
-    return view('pages/crearescuderia');
-})->name('crearescuderia')->middleware('auth');
+// Route::get('crearescuderia', function () {
+//     return view('pages/crearescuderia');
+// })->name('crearescuderia')->middleware('auth');
+
+Route::resource('crearescuderia', EscuderiaController::class)->middleware(['auth', 'verified']);
+// Route::get('/crearescuderia', [EscuderiaController::class, 'index'])->name('crearescuderia')->middleware(['auth', 'verified']);
+
+Route::get('/miescuderia', [EscuderiaController::class, 'loadmiescuderia'])->name('miescuderia')->middleware(['auth', 'verified']);
+
+// Route::resource('miescuderia', EscuderiaController::class)->name('*', 'miescuderia')->middleware(['auth', 'verified']);
+
 // RUTAS SIN PROTECCIÓN
 
 Route::get('calendario', function () {
     return view('pages/calendario');
 })->name('calendario');
 
-Route::get('calendario', function () {
-    return view('pages/calendario');
-})->name('calendario');
 
 // PILOTOS
-Route::get('alonso', function () {
-    return view('pages/pilotos/alonso');
-})->name('alonso');
+Route::get('pilotos', function () {
+    return view('pages/pilotos/index');
+})->name('pilotos');
+Route::get('pilotos2', function () {
+    return view('pages/pilotos/index2');
+})->name('pilotos2');
+
+Route::get('/piloto/{id}', [PilotoController::class, 'index'])->name('piloto');
 
 
 // ESCUDERÍAS
-Route::get('ferrari', function () {
-    return view('pages/escuderias/ferrari');
-})->name('ferrari');
+Route::get('escuderias', function () {
+    return view('pages/escuderias/index');
+})->name('escuderias');
 
+Route::get('/escuderia/{id}', [EscuderiaController::class, 'datosescuderia'])->name('escuderia');
 
 // CIRCUITOS
-Route::get('monaco', function () {
-    return view('pages/circuitos/monaco');
-})->name('monaco');
+
+Route::get('circuitos', function () {
+    return view('pages/circuitos/index');
+})->name('circuitos');
+Route::get('circuitos2', function () {
+    return view('pages/circuitos/index2');
+})->name('circuitos2');
+
+Route::get('/circuito/{id}', [CircuitoController::class, 'index'])->name('circuito');
 
 

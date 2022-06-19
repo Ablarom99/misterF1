@@ -1,5 +1,9 @@
 @extends('layouts.custom-index')
 
+@section('head')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+@endsection
+
 @section('content')
     {{-- SECTION 1 --}}
     <section class="section-escuderia">
@@ -9,41 +13,52 @@
                 transform="translate(100 100)" />
         </svg>
         <div class="contenedor-formulario">
-            <form class="form-esc">
+            <form action="{{ route('crearescuderia.store') }}" method="POST" class="form-esc"
+                enctype="multipart/form-data">
+                @csrf
                 <h1 class> Crea tu Escudería</h1>
+                @if($errors->any())
+                <div class="error">
+                        <h6 class="text-red">Asegúrate de escribir correctamente los campos</h6>
+                        @foreach($errors->all() as $error)
+                        <p class="text-red">{{$error}}</p>
+                        @endforeach
+                    </div>
+            @endif
+                <div id="error" style="visibility: hidden"><p class="text-red">Asegúrese de que los pilotos no sean iguales</p></div>
                 <div class="row">
                     <div class="col-sm-12 padding-top-bottom padding-left-right padding-bottom-5">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre" id="nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" id="nombre" name="nombre">
                         </div>
                     </div>
                     <div class="col-sm-6 padding-left padding-bottom-5">
-                        <select class="selectpicker">
-                            <option>Alonso</option>
-                            <option>Spain</option>
-                            <option>Italy</option>
+                        <select onchange="elegirpiloto()" id="piloto1" name="piloto1" class="selectpicker">
+                            @foreach ($pilotos as $piloto)
+                                <option value="{{ $piloto['id'] }}">{{ $piloto['nombre'] }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-sm-6 padding-right  padding-bottom-5">
-                        <select class="selectpicker">
-                            <option>Alonso</option>
-                            <option>Spain</option>
-                            <option>Italy</option>
+                        <select onchange="elegirpiloto2()" id="piloto2" name="piloto2" class="selectpicker">
+                            @foreach ($pilotos as $piloto)
+                                <option value="{{ $piloto['id'] }}">{{ $piloto['nombre'] }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-sm-6 padding-left ">
-                        <select class="selectpicker">
-                            <option>Alpine</option>
-                            <option>Spain</option>
-                            <option>Italy</option>
+                        <select name="constructor" class="selectpicker">
+                            @foreach ($constructors as $constructor)
+                                <option value="{{ $constructor['id'] }}">{{ $constructor['nombre'] }}</option>
+                            @endforeach
                         </select>
                     </div>
                     <div class="col-sm-6 padding-right padding-bottom-5 ">
-                        <input type="file" class="form-control" placeholder="escudo">
+                        <input name="fotoescudo" type="file" class="form-control" placeholder="escudo">
                     </div>
                 </div>
                 <div class="text-center padding-bottom-5">
-                    <button class="btn btn-green">Entrar</button>
+                    <button type="submit" class="btn btn-red">Entrar</button>
                 </div>
             </form>
         </div>
@@ -56,4 +71,35 @@
 
 
     {{-- SECTION 4 --}}
+@endsection
+@section('scripts')
+    <script>
+        elegirpiloto2();
+
+        function elegirpiloto() {
+            var piloto1 = document.getElementById('piloto1');
+            var piloto2 = document.getElementById('piloto2');
+
+            if (piloto2.options[piloto2.selectedIndex].value == piloto1.options[piloto1.selectedIndex].value) {
+                piloto1.options[piloto1.selectedIndex++];
+                document.getElementById('error').style.visibility="visible";
+
+            }else{
+                document.getElementById('error').style.visibility="hidden";
+            }
+
+        }
+        function elegirpiloto2() {
+            var piloto1 = document.getElementById('piloto1');
+            var piloto2 = document.getElementById('piloto2');
+
+            if (piloto1.options[piloto1.selectedIndex].value == piloto2.options[piloto2.selectedIndex].value) {
+                piloto2.options[piloto2.selectedIndex++];
+                document.getElementById('error').style.visibility="visible";
+            }
+            else{
+                document.getElementById('error').style.visibility="hidden";
+            }
+        }
+    </script>
 @endsection

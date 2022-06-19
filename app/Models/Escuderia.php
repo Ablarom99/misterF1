@@ -8,19 +8,24 @@ use Illuminate\Database\Eloquent\Model;
 class Escuderia extends Model
 {
     use HasFactory;
+    protected $table = 'escuderias';
+    protected $primaryKey = 'id';
+    public $timestamps = 'true';
 
-
-
-
-    // Relación de Uno a uno
-
-    public function noticia(){
-        return $this->hasOne('App\Models\Constructor');
-    }
-
-    //Relación de muchos a muchos
+    protected $fillable = [
+        'nombre',
+        'escudo',
+        'puntos',
+        'user_id',
+        'constructor_id'
+    ];
 
     public function pilotos(){
-        return $this->belongsToMany('App\Models\Pilotos');
+        return $this->belongsToMany('App\Models\Piloto');
+    }
+
+        // de uno a muchos
+    public function constructors(){
+        return $this->belongsTo(Constructor::class, 'constructor_id');
     }
 }
