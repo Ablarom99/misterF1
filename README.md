@@ -1,5 +1,7 @@
 # MisterF1
 
+<img src="https://github.com/Ablarom99/misterF1/blob/main/public/recursos/images/index/overlay.jpg?raw=true">
+
 _MisterF1 permite consultar todo tipo de datos relacionados con la F1:_
     <ul>
     <li>Calendario de Carreras temporada 2022.</li>
@@ -33,10 +35,14 @@ Para crear el enlace simbólico de /storage a /public.
 
 ### Frameworks y tecnologías usadas 📋
 
-_Laravel: Framework PHP.
-Bootstrap: Framework front-end HTML y CSS.
-JQuery: Framework JavaScript.
-_
+<ul>
+<li>Laravel: Framework PHP.</li>
+<li>Bootstrap: Framework front-end HTML y CSS.</li>
+<li>JQuery: Framework JavaScript.</li>
+</ul>
 
-<a href="https://www.figma.com/file/SDRvtmKtRbO2XaUlOjJ1dw/misterF1?node-id=33%3A2" >Guía de Estilos</a>
-<a href="https://www.figma.com/file/SDRvtmKtRbO2XaUlOjJ1dw/misterF1?node-id=0%3A1" >Diseño de Aplicación</a>
+### Frameworks y tecnologías usadas ✏️
+<ul>
+<li><a href="https://www.figma.com/file/SDRvtmKtRbO2XaUlOjJ1dw/misterF1?node-id=33%3A2" >Guía de Estilos</a></li>
+<li><a href="https://www.figma.com/file/SDRvtmKtRbO2XaUlOjJ1dw/misterF1?node-id=0%3A1" >Diseño de Aplicación</a></li>
+</ul>
