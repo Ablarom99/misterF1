@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->text('contenido');
-            $table->string('portada')->default("default.png");
+            $table->string('portada')->default("default.jpg");
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();

@@ -35,16 +35,7 @@
                             {{ __('Enviar') }}
                         </button>
                     </div>
-                    @error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                    @error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+
 
                 </form>
                 <div class="form-link col-sm-12 padding-top-bottom padding-left-right">
