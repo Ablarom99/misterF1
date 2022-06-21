@@ -49,6 +49,6 @@ Para crear el enlace simbólico de /storage a /public.
 
 ### Documentación y Presentación 🖼️
 <ul>
-<li><a href=""></a></li>
-<li><a href=""></a></li>
+<li><a href="https://github.com/Ablarom99/misterF1/blob/main/documentacion/Documentaci%C3%B3nMisterF1.pdf">Documentación</a></li>
+<li><a href="https://github.com/Ablarom99/misterF1/blob/main/documentacion/misterf1.pptx">Presentación</a></li>
 </ul>
