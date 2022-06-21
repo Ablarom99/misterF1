@@ -41,8 +41,14 @@ Para crear el enlace simbólico de /storage a /public.
 <li>JQuery: Framework JavaScript.</li>
 </ul>
 
-### Frameworks y tecnologías usadas ✏️
+### Guía de Estilos y Diseño ✏️
 <ul>
 <li><a href="https://www.figma.com/file/SDRvtmKtRbO2XaUlOjJ1dw/misterF1?node-id=33%3A2" >Guía de Estilos</a></li>
 <li><a href="https://www.figma.com/file/SDRvtmKtRbO2XaUlOjJ1dw/misterF1?node-id=0%3A1" >Diseño de Aplicación</a></li>
+</ul>
+
+### Documentación y Presentación 🖼️
+<ul>
+<li><a href=""></a></li>
+<li><a href=""></a></li>
 </ul>
