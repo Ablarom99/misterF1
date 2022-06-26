@@ -32,31 +32,41 @@
                                     </span>
                                 @enderror
                         </div>
+
                         <div class="col-sm-12 padding-20 padding-left-right">
+
                             <div class="form-group">
                             <label for="password">Contraseña:</label>
 
 
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
 </div>
+
                         @error('password')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                         </div>
+
                         <div class="col-sm-12 padding-20 padding-left-right">
+
                             <div class="form-group">
                             <label for="password"> Repetir Contraseña:</label>
 
 
                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+
 </div>
+
                         </div>
 
 
                     </div>
+
                     <div class="text-right padding-20 padding-right">
+
                     <button type="submit" class="btn btn-red">
                                     {{ __('Enviar') }}
                                 </button>
@@ -73,7 +83,9 @@
                     @enderror
 
                 </form>
+
                 <div class="form-link col-sm-12 padding-20 padding-left-right">
+
                     <h5>¿Aún no tienes cuenta?<a href="{{ route('register') }}">Regístrate</a></h5>
                 </div>
             </div>
