@@ -5,3 +5,4 @@
     <script src="{{asset('assets/js/jquery.countTo.min.js')}}"></script>
     <script src="{{asset('assets/js/jquery.shuffle.min.js')}}"></script>
     <script src="{{asset('assets/js/script.js')}}"></script>
+

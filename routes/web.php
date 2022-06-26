@@ -29,6 +29,8 @@ Route::get('/', function () {
 })->name('home');
 
 Auth::routes();
+Auth::routes(['verify' => true]);
+
 
 // RUTAS PROTEGIDAS
 
@@ -64,7 +66,9 @@ Route::match(['get', 'put'], 'userdelete/{usuario}', [AdministradorController::c
 
 // RUTAS SIN PROTECCIÓN
 
-Route::get('/send-email', [MailController::class, 'sendEmail']);
+Route::match(['get', 'post'], 'send-email', [MailController::class, 'index'])->name('send-email');
+
+
 
 Route::get('calendario', function () {
     return view('pages/calendario');

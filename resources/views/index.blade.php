@@ -102,9 +102,10 @@
     <section class="site-section section-newsletter text-center">
         <div class="container">
             <h2>¿Quieres recibir noticias?</h2>
-            <form class="form-group newsletter-group">
-                <input type="email" class="form-control" placeholder="Introduce tu email" required>
-                <button class="btn btn-red" type="button">Subscribirse</button>
+            <form action="send-email" method="POST" class="form-group newsletter-group">
+                @csrf
+                <input type="email" name="email" class="form-control" placeholder="Introduce tu email" required>
+                <button class="btn btn-red" type="submit">Subscribirse</button>
             </form><!-- /.newsletter-group -->
         </div>
     </section><!-- /.section-newsletter -->

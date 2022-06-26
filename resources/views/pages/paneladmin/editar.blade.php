@@ -40,9 +40,8 @@
                                         <option value="admin" name="admin">Administrador</option>
                                 </select>
                             </div>
-
-                        </div>
-                                @error('password')
+                            <div class="col-sm-12  padding-20 padding-left-right" style="width: 100%">
+                            @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -62,6 +61,10 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                            </div>
+
+                        </div>
+
 
                         <div class="text-right padding-20 padding-right">
                             <button type="submit" class="btn btn-red">Actualizar</button>

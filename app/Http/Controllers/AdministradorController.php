@@ -19,6 +19,12 @@ class AdministradorController extends Controller
     }
 
     public function update(Request $request, $id){
+        $request->validate([
+
+
+            'nickname'=>'required |unique:users',
+        ]);
+
         try {
 
             $edituser = User::find($id);

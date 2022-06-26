@@ -8,7 +8,7 @@ use App\Models\Noticia;
 class NoticiaController extends Controller
 {
     public function index(){
-        $carganoticia = Noticia::paginate(2);
+        $carganoticia = Noticia::orderBy('id', 'DESC')->paginate(2);
         return view('pages.noticias.noticias', compact('carganoticia'));
     }
     public function store(Request $request){

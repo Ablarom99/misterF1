@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre')->unique();
             $table->string('escudo')->default("default.png");
-            $table->string('puntos')->nullable();
+            $table->integer('puntos')->nullable();
             $table->unsignedBigInteger('user_id')->unique();
             $table->unsignedBigInteger('constructor_id');
 

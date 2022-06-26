@@ -18,9 +18,7 @@
                                 <th>Usuario</th>
                                 <th>Email</th>
                                 <th>Rol</th>
-                                @foreach ($cargauser as $usuario)
-                                @if ($usuario->escuderia != null)<th>Nombre Escuderia</th> @endif
-                                @endforeach
+                                <th>Nombre Escuderia</th>
                                 <th>Editar-Eliminar</th>
                             </tr>
                         </thead>

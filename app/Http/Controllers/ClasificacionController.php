@@ -10,7 +10,7 @@ use App\Models\Escuderia;
 class ClasificacionController extends Controller
 {
     public function index(){
-        $escuderiasclasi = Escuderia::paginate(10);
+        $escuderiasclasi = Escuderia::orderBy('puntos', 'DESC')->paginate(10);
         return view('pages.clasificacion', compact('escuderiasclasi'));
 
     }

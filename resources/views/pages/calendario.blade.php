@@ -135,7 +135,7 @@
                             <div aria-expanded="false" id="collapseOne6" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
-                                        <li>Bégica - 28 Agosto</li>
+                                        <li>Bélgica - 28 Agosto</li>
                                     </ul>
                                 </div><!-- /.panel-body -->
                             </div><!-- /.panel-collapse -->
@@ -179,7 +179,7 @@
                                 <div class="panel-body">
                                     <ul>
                                         <li>Singapur - 2 Octubre</li>
-                                        <li>Jaón - 9 Octubre</li>
+                                        <li>Japón - 9 Octubre</li>
                                         <li>EEUU - 23 Octubre</li>
                                         <li>México - 30 Octubre</li>
                                     </ul>
@@ -202,7 +202,7 @@
                             <div aria-expanded="false" id="collapseOne" class="panel-collapse collapse calendar">
                                 <div class="panel-body">
                                     <ul>
-                                        <li>Brasi - 13 Noviembre</li>
+                                        <li>Brasil - 13 Noviembre</li>
                                         <li>Abu Dabi - 20 Noviembre</li>
                                     </ul>
                                 </div><!-- /.panel-body -->

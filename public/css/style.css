@@ -1724,7 +1724,8 @@ padding-right: 10%;
     position: relative;
 }
 .img-miescuderia{
-    height: 95px;
+    max-width: 250px;
+    height: 200px;
     float: left;
 }
 .border-info{

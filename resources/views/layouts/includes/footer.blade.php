@@ -6,7 +6,7 @@
             <div class="col-md-5 col-sm-4 col-xs-6">
                 <a class="site-title"><span style="font-family: ethnocentric;">Mister</span><span
                     style="font-family: protos; color:#e10600;">F1</span></a>
-                    <h2>¿Qué es MisterF1?</h2>
+                    <h3>¿Qué es MisterF1?</h3>
                     <p>MisterF1 es una aplicación que permite consultar información relacionada con el mundo de la Fórmula
                         1</p>
                         <p> ⭐ El juego misterF1, basado en los juegos tipo “Fantasy”, crea tu propia escudería, elige dos
@@ -15,7 +15,8 @@
             </div>
             <div class="col-lg-offset-4 col-md-3 col-sm-4 col-md-offset-2 col-sm-offset-0 col-xs-6 ">
                 <h3>Contacto</h3>
-                <p><a>misterf1soporte@gmail.com</a></p>
+                <p>Puedes ponerte en contacto con nuestro soporte a través de las redes sociales o en nuestro correo electrónico:</p>
+                <p><span class="text-red"><i class="fa-solid fa-envelope"></i> misterf1soporte@gmail.com</span></p>
             </div>
             <div class="clearfix visible-xs"></div>
         </div>

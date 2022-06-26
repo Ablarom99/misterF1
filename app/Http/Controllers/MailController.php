@@ -9,11 +9,12 @@ use App\Mail\TestMail;
 
 class MailController extends Controller
 {
-    public function sendEmail(){
+    public function index(Request $request){
         $details=[
             'title' => 'Mister F1 Soporte',
             'body' => 'Gracias por suscribirte a las noticias de MisterF1'
         ];
-        Mail::to('misterf1soporte@gmail.com')->send(new TestMail($details));
+        Mail::to($request->email)->send(new TestMail($details));
+        return redirect()->back();
     }
 }

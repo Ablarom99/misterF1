@@ -58,7 +58,7 @@
                                 </span>
                             @enderror
 
-                    <div class="text-right padding-top-bottom padding-right">
+                    <div class="text-right padding-20 padding-right">
                         <button type="submit" class="btn btn-red"> Crear</button>
                     </div>
                 </form>
